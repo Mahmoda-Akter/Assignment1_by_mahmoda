@@ -12,14 +12,17 @@
     color:#FFFFFF ;
     margin-bottom: 14px;
 }
+.btn:hover{
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid #30B868;
+    cursor: pointer;
+}
 body{
   font-family: "Poppins", sans-serif;   
 }
 /* nav section design */
 
-header{
-    font-family: "Poppins", sans-serif; 
-}
 
 nav{
     font-family: "Poppins", sans-serif;
@@ -40,6 +43,8 @@ ul li{
 ul li a{
     text-decoration: none;
     color:#000000 ;
+    font-size: 14px;
+    font-weight: 60px;
 }
 /* Banner container here */
 
@@ -57,16 +62,22 @@ ul li a{
 .banner_text{
     text-align: center;
 }
-.banner_text h3{
+.banner_text .banner_1btn{
     background-color: #FFFFFF;
     height:32px ;
-    width: 250px;
+    width: 220px;
     margin: 0 auto;
     padding: 4px;
     border-radius: 20px;
-    color: #469165;
+    color: #469165d0;
+    border: none;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
+} 
+.banner_text .banner_1btn:hover{
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FAFAFA;
 }
 .banner_text .banner_heading{
     color: #FFFFFF;
@@ -78,6 +89,7 @@ ul li a{
     color:#30B868 ;
     font-size: 63px;
     font-weight: 600;
+    text-transform: capitalize;
 }
 .banner_item .banner_peragraph{
     color: #FFFFFF;
@@ -94,11 +106,22 @@ ul li a{
 } 
 .banner_btn .btn1{
     width: 224px;
-    font-family: "Poppins", sans-serif; 
+    font-weight: 700; 
+}
+.banner_btn .btn1:hover{
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FAFAFA;
+}
+
+.banner_btn .btn1 i{
+    margin-left: 10px;
 }
 .banner_btn .btn2{
     background-color: transparent;
     border: 1px solid #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
     
 }
 /* Notes section here */
@@ -139,9 +162,6 @@ ul li a{
     align-items: center;
     gap: 24px; 
     margin-top: 100px;
-    
-    
-
 }
 .note_icons p{
     font-size: 14px;
@@ -153,7 +173,6 @@ ul li a{
 .brain_container{
     display: flex;
     padding: 0 140px 0;
-    
 }
 .brain_img img{
     height: 600px;
@@ -174,7 +193,6 @@ ul li a{
     font-size: 38px;
     font-weight:700 ;
     text-transform: capitalize;
-
 }
 .brain_text p{
     font-size: 14px;
@@ -201,15 +219,17 @@ ul li a{
     font-weight: 600;
     color: #001931;
 }
+
+/* Thinking section here */
 #thinking_section{
     padding: 0 120px 120px;
     margin-top: 50px;
 }
 .thinking_container{
-    padding: 26px;
+    padding: 46px;
     height: 374px;
    text-align: center;
-   background-color: beige;
+   background-color:#F7F6F2;
 }
 .thinking_container h2{
     font-size: 40px;
@@ -218,68 +238,35 @@ ul li a{
     margin-top: 30px;
 }
 .thinking_container p{
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 400;
     color: #627382;
-    margin-top: 24px;
+    margin-top: 5px;
+}
+.thinking_container .pa{
+    margin-top: 5px;
 }
 .thinking_container .btn3{
    text-align: center;
-     border-radius: 5px;
+   border-radius: 5px;
 } 
-.arro_img{
-    margin-top: 25px;
-    background-color:#469165;
-    text-align: center;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    
+.btn3{
+    margin-top: 20px;
+} 
+.btn3 i{
+    margin-left: 10px;
 }
-.arro_img .btn3{
-    height: 40px;
-    width: 120px;
-    background-color: #469165;
-    border: none;
-    color: #FFFFFF;
-    font-weight: 700;
-    margin-left: 5px;
-    
-    
-}
+/* footer section here */
 
-.arro_img img{
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    background-color:#469165;
-    background-size: cover;
-    padding: 4px;
-    margin-right: 5px;
-  
-} 
-.thinking_container p{
-    color: #627382;
-    font-size: 15px;
-    font-weight: 400;
-}
 #footer_section{
     background-color:#001931;
     padding: 120px 120px 30px;
 }
-.footer_container{
-   
-    
-}
+
 .footer_nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
-}
-.social_icon {
-
+    align-items: center;  
 }
 .social_icon i {
     background-color: #FFFFFF;
@@ -290,12 +277,10 @@ ul li a{
 }
 .social_text h4{
     color: #FFFFFF;
-    font-size: 18px;
-    
+    font-size: 18px; 
 }
 .secnav{
-    margin-top: 40px;
-    
+    margin-top: 40px;   
 }
 hr{
     height: 2px;
